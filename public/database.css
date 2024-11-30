@@ -1,0 +1,242 @@
+/* Reset some basic styles for uniformity */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up base styles for body */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Apple’s typeface */
+    background-color: #f5f5f7; /* Light background color */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px; /* Space for fixed header */
+    margin: 0;
+}
+
+/* Global Styles */
+a {
+    color: #007aff; /* Apple-like blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #0051b3; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;  /* Aligns home icon left and auth icons right */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Home Icon (Left) */
+.home-icon {
+    font-size: 1.8rem;
+    color: #007aff;
+    transition: transform 0.3s ease;
+}
+
+.home-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Auth Icons (Right, top corner) */
+.auth-icons {
+    position: absolute; /* Absolute positioning */
+    top: 15px; /* Distance from the top of the page */
+    right: 30px; /* Distance from the right edge of the page */
+    display: flex;
+    gap: 20px;
+}
+
+.auth-icons a {
+    font-size: 1.3rem;
+    color: #007aff;
+    transition: transform 0.3s ease;
+}
+
+.auth-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Header Text (Centered) */
+.header-text {
+    text-align: center;
+    flex-grow: 1; /* Ensures the header text takes up the available space */
+    margin-top: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Main Content Section */
+main {
+    margin-top: 120px; /* Adjusting for the fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Input Fields */
+label {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    margin: 20px 0 8px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #007aff;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 122, 255, 0.3);
+    outline: none;
+}
+
+/* Crime Results Section */
+#crime-results {
+    margin-top: 30px;
+}
+
+.crime-result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.crime-result:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.crime-result h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #007aff;
+    margin-bottom: 10px;
+}
+
+.crime-result p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+}
+
+footer a {
+    color: #007aff;
+}
+
+footer a:hover {
+    color: #0051b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"], select {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .crime-result {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], select {
+        font-size: 0.95rem;
+    }
+
+    .crime-result h3 {
+        font-size: 1.1rem;
+    }
+}

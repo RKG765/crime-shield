@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Crime Shield</title>
+    <link rel="stylesheet" href="forgot.css">
+    <!-- Adding Font Awesome for the home icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Crime Shield</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="forgot-password-section">
+            <!-- Home Icon Link -->
+            <a href="index.html" class="home-icon">
+                <i class="fas fa-home"></i> <!-- Font Awesome Home Icon -->
+            </a>
+            <h2>Forgot Password</h2>
+            <p>Enter your registered email address, and we'll send you a password reset code.</p>
+            
+            <form id="forgot-password-form" onsubmit="event.preventDefault(); checkEmail();">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                
+                <button type="submit">Send Reset Code</button>
+                
+                <!-- Success and Error Messages -->
+                <p id="forgot-password-error" class="error-message"></p>
+                <p id="forgot-password-success" class="success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crime Shield |</p>
+    </footer>
+
+    <!-- Importing the signup.js and forgot-password.js -->
+    <script src="signup.js"></script> <!-- Importing signup.js where users are stored -->
+    <script src="forgot.js"></script> <!-- Importing the forgot.js to handle the email check -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Crime Updates - Crime Shield</title>
+    <link rel="stylesheet" href="updates.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Crime Shield</h1>
+            <p>Stay informed with the latest crime updates near you</p>
+            <div class="header-icons">
+                <a href="index.html" class="icon home-icon" title="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                </a>
+                <a href="login.html" class="icon login-icon" title="Login">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M15 12l-4-4 4-4v3h4v2h-4v3zm-2 7h-2v-6h-3l4-4 4 4h-3v6z"/>
+                    </svg>
+                </a>
+                <a href="signup.html" class="icon signup-icon" title="Sign Up">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M19 9v6h-2v-4h-6v4h-2v-6h-6v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="updates-section">
+            <h2>Recent Crime Updates</h2>
+
+            <!-- State Filter -->
+            <label for="stateFilter">Filter by State:</label>
+            <select id="stateFilter">
+                <option value="">Select a state...</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+            </select>
+
+            <!-- Crime Updates Container -->
+            <div id="updates-container">
+                <!-- Real-time crime updates will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crime Shield |</p>
+    </footer>
+
+    <script src="updates.js"></script>
+</body>
+</html>

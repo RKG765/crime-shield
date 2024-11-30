@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Database - Crime Shield</title>
+    <link rel="stylesheet" href="database.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Home Icon -->
+            <a href="index.html" class="home-icon">
+                <i class="fas fa-home"></i> <!-- Font Awesome Home Icon -->
+            </a>
+            
+            <!-- Login/Signup Icons -->
+            <div class="auth-icons">
+                <a href="login.html" class="login-icon">
+                    <i class="fas fa-sign-in-alt"></i> <!-- Font Awesome Login Icon -->
+                </a>
+                <a href="signup.html" class="signup-icon">
+                    <i class="fas fa-user-plus"></i> <!-- Font Awesome Signup Icon -->
+                </a>
+            </div>
+
+            <div class="header-text">
+                <h1>Crime Shield</h1>
+                <p>Crime Database - Stay informed, stay safe</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="database-section">
+            <h2>Crime Case Database</h2>
+
+            <!-- Search bar for querying crimes -->
+            <label for="searchBar">Search Crime Cases:</label>
+            <!-- <input type="text" id="searchBar" placeholder="Search for specific cases..."> -->
+
+            <!-- Dropdown for selecting the crime type -->
+            <label for="caseTypeBar">Select Case Type:</label>
+            <select id="caseTypeBar">
+                <option value="">Select a case type</option>
+                <option value="Rape">Rape</option>
+                <option value="Murder">Murder</option>
+                <option value="Assault">Assault</option>
+                <option value="Robbery">Robbery</option>
+                <option value="Theft">Theft</option>
+                <option value="Fraud">Fraud</option>
+                <option value="Burglary">Burglary</option>
+                <option value="Kidnapping">Kidnapping</option>
+                <option value="Domestic Violence">Domestic Violence</option>
+                <option value="Drugs">Drug-Related Crimes</option>
+                <option value="Corruption">Corruption</option>
+            </select>
+
+            <!-- Dropdown for selecting location (states of India) -->
+            <label for="locationBar">Search by State:</label>
+            <select id="locationBar">
+                <option value="">Select a state</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+            </select>
+
+            <div id="crime-results">
+                <!-- This section will display the crime results -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crime Shield</p>
+    </footer>
+
+    <script src="database.js"></script>
+</body>
+</html>

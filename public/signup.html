@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Crime Shield</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <h1>Crime Shield</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="database.html">Crime Database</a></li>
+                <li><a href="report.html">Report a Crime</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="signup">
+        <h2>Create an Account</h2>
+        <p>Sign up to receive updates, report crimes, and be a part of Crime Shield's mission.</p>
+
+        <form id="signupForm" action="javascript:void(0);" onsubmit="validateAndSubmitForm()">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p id="error-message" style="color: red;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crime Shield. All rights reserved.</p>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+</html>

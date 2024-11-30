@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Crime Shield</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header>
+        <h1>Crime Shield</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="database.html">Crime Database</a></li>
+                <li><a href="report.html">Report a Crime</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We are here to assist you. If you have any questions or need support, please don't hesitate to reach out.</p>
+
+        <form id="contactForm" action="javascript:void(0);" onsubmit="handleSubmit()">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required placeholder="Type your message here..." rows="4"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="responseMessage" style="color: green; text-align: center;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crime Shield. All rights reserved.</p>
+    </footer>
+
+    <script src="contactus.js"></script>
+</body>
+</html>
